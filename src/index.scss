@@ -1,0 +1,22 @@
+@use "./components/App/App.scss";
+@use "./components/AddNotePopup/AddNotePopup.scss";
+@use "./components/Footer/Footer.scss";
+@use "./components/Button/Button.scss";
+@use "./components/ButtonsBlock/ButtonsBlock.scss";
+
+@font-face {
+    font-family: "SketchChalk-vnveO";
+    src: url("./assets/sketch-chalk-font/SketchChalk-vnveO.ttf")
+        format("truetype");
+}
+
+* {
+    font-size: 10px;
+    font-family: "SketchChalk-vnveO";
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("./assets/images/bg.jpg");
+}
