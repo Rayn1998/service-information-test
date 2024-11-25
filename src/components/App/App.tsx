@@ -7,6 +7,7 @@ import ButtonsBlock from "../ButtonsBlock/ButtonsBlock";
 import Footer from "../Footer/Footer";
 import { RootState } from "../../redux/store";
 import { openPopup, closePopup } from "../../redux/slices/AddNotePopup_slice";
+import Note from "../Note/Note";
 
 const App: FC = () => {
 	return (
@@ -14,12 +15,21 @@ const App: FC = () => {
 			<header className="App_header">NOTES :</header>
 			<main className="main">
 				<AddNotePopup />
-				<ButtonsBlock>
-					<Button />
-				</ButtonsBlock>
 				<div className="main-block">
-					<div className="main_left"></div>
-					<div className="main_right"></div>
+					<ButtonsBlock>
+						<Button />
+					</ButtonsBlock>
+					<div className="main_2_blocks">
+						<div className="main_left"></div>
+						<div className="main_right">
+							<Note />
+							<Note />
+							<Note />
+							<Note />
+							<Note />
+							<Note />
+						</div>
+					</div>
 				</div>
 			</main>
 			<Footer />

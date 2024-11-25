@@ -1,0 +1,64 @@
+.note {
+    width: 100%;
+    min-height: 15rem;
+    max-height: 20rem;
+    outline: 0.1rem solid black;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    gap: 1rem;
+    transition: all 0.5s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: translate(-0.2rem, -0.6rem);
+    }
+
+    .note_title {
+        font-size: 2rem;
+    }
+
+    .note_text {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+        overflow: scroll;
+    }
+
+    .note_star {
+        background-image: url("../../assets/images/star.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 4rem;
+        height: 4rem;
+        z-index: 2;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .note_color_block {
+        width: 7rem;
+        height: 2.5rem;
+        background-color: green;
+        position: absolute;
+        top: -1.5rem;
+        left: 5rem;
+    }
+
+    .note_left_corner {
+        position: absolute;
+        left: 0.3rem;
+        bottom: 0.3rem;
+        border: 0.8rem solid transparent;
+        border-top-color: black;
+        transform: rotate(-135deg);
+    }
+}

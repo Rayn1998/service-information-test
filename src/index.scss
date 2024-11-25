@@ -3,6 +3,7 @@
 @use "./components/Footer/Footer.scss";
 @use "./components/Button/Button.scss";
 @use "./components/ButtonsBlock/ButtonsBlock.scss";
+@use "./components/Note/Note.scss";
 
 @font-face {
     font-family: "SketchChalk-vnveO";
@@ -20,3 +21,8 @@
 html {
     background-image: url("./assets/images/bg.jpg");
 }
+
+// body {
+//     height: 100vh;
+//     width: 100vw;
+// }
